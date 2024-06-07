@@ -11,16 +11,16 @@
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 {
 	binary_tree_t *getter;
-
+/*	binary_tree_t *parent;*/
 	getter = malloc(sizeof(binary_tree_t));
 	if (getter == NULL)
 		return (NULL);
-
+/**getter = malloc(sizeof(binary_tree_t));*/
 	getter->n = value;
 	getter->parent = parent;
 	getter->left = NULL;
 	getter->right = NULL;
-
+/**parent = getter;*/
 	return (getter);
 }
 
